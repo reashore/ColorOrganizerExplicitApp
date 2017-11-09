@@ -14,8 +14,8 @@ const SortMenu = ({ store }) =>
         <h1>Sort Colors</h1>
         {Object.keys(options).map((item, i) =>
             <a key={i} href="#" className={(store.getState().sort === options[item]) ? "selected" : null}
-                onClick={e => {
-                    e.preventDefault()
+                onClick={event => {
+                    event.preventDefault()
                     store.dispatch(sortColors(options[item]))
                 }}>{item}</a>
         )}

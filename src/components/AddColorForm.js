@@ -22,7 +22,6 @@ const AddColorForm = ({ store }) => {
             <button>ADD</button>
         </form>
     )
-
 }
 
 AddColorForm.propTypes = {

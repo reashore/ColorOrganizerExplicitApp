@@ -15,8 +15,7 @@ class Color extends Component {
                 <button onClick={onRemove}>
                     <FaTrash />
                 </button>
-                <div className="color" style={{ backgroundColor: color }}>
-                </div>
+                <div className="color" style={{ backgroundColor: color }}/>
                 <TimeAgo timestamp={timestamp} />
                 <div>
                     <StarRating starsSelected={rating} onRate={onRate} />

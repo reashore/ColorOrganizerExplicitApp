@@ -1,3 +1,4 @@
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './components/App'
@@ -8,11 +9,8 @@ const store = storeFactory()
 window.React = React
 window.store = store
 
-const render = () =>
-    ReactDOM.render(
-        <App store={store}/>,
-        document.getElementById('react-container')
-    )
+const reactContainer = document.getElementById('react-container')
+const render = () => ReactDOM.render(<App store={store}/>, reactContainer)
 
 store.subscribe(render)
 render()

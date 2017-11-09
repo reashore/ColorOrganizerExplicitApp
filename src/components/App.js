@@ -1,4 +1,4 @@
-import '../../stylesheets/APP.scss'
+import '../stylesheets/APP.scss'
 import AddColorForm from './AddColorForm'
 import SortMenu from './SortMenu'
 import ColorList from './ColorList'

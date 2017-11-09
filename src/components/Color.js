@@ -1,4 +1,4 @@
-import '../../stylesheets/Color.scss'
+import '../stylesheets/Color.scss'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 import StarRating from './StarRating'

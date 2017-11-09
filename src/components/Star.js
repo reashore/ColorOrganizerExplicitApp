@@ -1,5 +1,5 @@
 
-import '../../stylesheets/Star.scss'
+import '../stylesheets/Star.scss'
 import PropTypes from 'prop-types'
 
 const Star = ({ selected = false, onClick = f => f }) =>

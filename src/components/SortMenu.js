@@ -1,5 +1,5 @@
 
-import '../../stylesheets/Menu.scss'
+import '../stylesheets/Menu.scss'
 import PropTypes from 'prop-types'
 import { sortColors } from '../actions'
 

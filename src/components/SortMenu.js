@@ -1,3 +1,4 @@
+
 import '../../stylesheets/Menu.scss'
 import PropTypes from 'prop-types'
 import { sortColors } from '../actions'
@@ -12,13 +13,11 @@ const SortMenu = ({ store }) =>
     <nav className="menu">
         <h1>Sort Colors</h1>
         {Object.keys(options).map((item, i) =>
-            <a key={i}
-               href="#"
-               className={(store.getState().sort === options[item]) ? "selected" : null}
-               onClick={e => {
-                   e.preventDefault()
-                   store.dispatch(sortColors(options[item]))
-               }}>{item}</a>
+            <a key={i} href="#" className={(store.getState().sort === options[item]) ? "selected" : null}
+                onClick={e => {
+                    e.preventDefault()
+                    store.dispatch(sortColors(options[item]))
+                }}>{item}</a>
         )}
     </nav>
 

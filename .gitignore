@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# build assets
+/dist/assets
+
 # testing
 /coverage
 

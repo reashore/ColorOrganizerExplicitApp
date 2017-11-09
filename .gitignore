@@ -4,7 +4,8 @@
 /node_modules
 
 # build assets
-/dist/assets
+/dist/assets/bundle.js
+/dist/assets/bundle.map
 
 # testing
 /coverage

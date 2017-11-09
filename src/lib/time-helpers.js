@@ -29,14 +29,10 @@ const checkDate = (diff, timeframeName, underTime, timeframe) =>
 const printFullDate = dateTime => `${dateTime.getMonth() + 1}/${dateTime.getDate()}/${dateTime.getFullYear()}`
 
 const lessThanAMinute = timeString =>
-    (timeString.match(/seconds/)) ?
-        "less than a minute" :
-        timeString + ' ago'
+    (timeString.match(/seconds/)) ? "less than a minute" : timeString + ' ago'
 
 const _checkNext = (result, callback) =>
-    (result) ?
-        lessThanAMinute(result) :
-        callback()
+    (result) ? lessThanAMinute(result) : callback()
 
 const checkNext = ([tfName, ...rest], timeframe, timestamp, now) =>
     _checkNext(

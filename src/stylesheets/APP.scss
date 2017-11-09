@@ -9,7 +9,6 @@ h1 {
 }
 
 body {
-
   @include clear;
   @include fade-bg($light, $light-grey);
 
@@ -18,10 +17,8 @@ body {
     flex-direction: column;
     height: 100%;
   }
-
 }
 
 input {
   outline: none;
 }
-
